@@ -5,59 +5,59 @@ using UnityEngine;
 public class PlayerStatsController : MonoBehaviour
 {
 	#region Stats - Properties. They cannot go under 0.0 by design
-	private float m_knowledge;
+	private float _knowledge;
 	public float Knowledge
 	{
 		get
 		{
-			return m_knowledge;
+			return _knowledge;
 		}
 
 		set
 		{
-			this.m_knowledge = (value < 0) ? (0.0F) : (value);
+			this._knowledge = (value < 0) ? (0.0F) : (value);
 		}
 	}
 
-	private float m_mass;
+	private float _mass;
 	public float Mass
 	{
 		get
 		{
-			return m_mass;
+			return _mass;
 		}
 
 		set
 		{
-			this.m_mass = (value < 0) ? (0.0F) : (value);
+			this._mass = (value < 0) ? (0.0F) : (value);
 		}
 	}
 
-	private float m_social;
+	private float _social;
 	public float Social
 	{
 		get
 		{
-			return m_social;
+			return _social;
 		}
 
 		set
 		{
-			this.m_social = (value < 0) ? (0.0F) : (value);
+			this._social = (value < 0) ? (0.0F) : (value);
 		}
 	}
 
-	private float m_energy;
+	private float _energy;
 	public float Energy
 	{
 		get
 		{
-			return m_energy;
+			return _energy;
 		}
 
 		set
 		{
-			this.m_energy = (value < 0) ? (0.0F) : (value);
+			this._energy = (value < 0) ? (0.0F) : (value);
 		}
 	}
 	#endregion
