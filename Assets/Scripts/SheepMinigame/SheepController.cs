@@ -16,7 +16,7 @@ public class SheepController : MonoBehaviour
 	{
 	    _rb = GetComponent<Rigidbody>();
 
-        Active = true;
+        //Active = true;
 	    _dead = false;
 	    if (_rb== null)
 	    {

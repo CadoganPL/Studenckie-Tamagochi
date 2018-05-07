@@ -55,6 +55,10 @@ public class SheepHerdController : MonoBehaviour
 	            _sheeps[0].Active = true;
 	        }
 	    }
+	    for (int i = _sheeps.Count - 1; i >= 0; i--)
+	    {
+	        if(_sheeps[i]==null)_sheeps.RemoveAt(i);
+	    }
 	}
 
     public bool Randomize
