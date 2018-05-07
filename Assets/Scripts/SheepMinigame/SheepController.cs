@@ -51,8 +51,19 @@ public class SheepController : MonoBehaviour
     {
         if (col.collider.tag == "Fence")
         {
-            EventManager.TriggerEvent("DecreaseProgressBar");
+            for (int i = 0; i < 10; i++)
+                EventManager.TriggerEvent("DecreaseProgressBar");
             _dead = true;
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "Win")
+        {
+            for(int i =0; i<10;i++)
+            EventManager.TriggerEvent("IncreaseProgressBar");
         }
     }
 }
